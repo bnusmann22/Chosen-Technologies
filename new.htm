@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Under Construction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #f4f4f9;
+      --text-color: #333;
+      --accent-color: #ff6b6b;
+      --button-color: #333;
+      --button-text: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 520px;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .illustration {
+      width: 180px;
+      margin: 0 auto 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: #666;
+    }
+
+    button {
+      padding: 0.8rem 1.5rem;
+      background-color: var(--button-color);
+      color: var(--button-text);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: var(--accent-color);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="illustration">
+      <!-- SVG from unDraw (open source) -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+        <g>
+          <path fill="#fbb040" d="M540 160h30v10h-30zM230 160h30v10h-30z"/>
+          <path fill="#ff6b6b" d="M200 170h400v280H200z"/>
+          <path fill="#fff" d="M220 190h360v240H220z"/>
+          <path fill="#ddd" d="M280 240h240v20H280zM280 280h240v20H280zM280 320h240v20H280z"/>
+          <circle cx="250" cy="470" r="20" fill="#333"/>
+          <circle cx="550" cy="470" r="20" fill="#333"/>
+        </g>
+      </svg>
+    </div>
+    <h1>Site Under Maintainance</h1>
+    <p>We're working hard to bring it back up. Stay tuned!</p>
+    
+  </div>
+</body>
+</html>
+

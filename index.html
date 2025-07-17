@@ -11,38 +11,37 @@
 </head>
 <body class="flex flex-col min-h-screen">
     <div class="wrapper flex-grow">
-
         <header>
             <nav style="display: flex;">
-            <div class="">
-                <!-- <img src="./chosen.png" alt="Chosen logo"> -->
-                <div class="text-6xl">➰</div>
-            </div>
+                <div class="">
+                    <!-- <img src="./chosen.png" alt="Chosen logo"> -->
+                    <div class="text-6xl" role="img">➰</div>
+                </div>
+                <div class='hidden '>
+                    ➕
+                </div>
+                <ul>    
+                    <li>About</li>
+                    <li>Blog </li>
+                    <li>Our services ↗</li>
+                </ul>
+
+                <button class="shadow-2xl">Get Started </button>
+            </nav>
+        </header>
+        <main>
             <div>
-                ➕
+            <!-- <video src="#"></video> -->
+                <span class="uppercase font-bold">Chosen Technologies</span>
+                <div>
+
+                    <button class="shadow-2xl">Get in touch</button>
+                </div>
             </div>
-            <ul>    
-                <li>About</li>
-                <li>Blog </li>
-                <li>Our services ↗</li>
-            </ul>
-
-            <button class="shadow-2xl">Get Started </button>
-        </nav>
-    </header>
-    <main>
-        <div>
-        <!-- <video src="#"></video> -->
-        <span class="uppercase font-bold">Chosen Technologies</span>
-        <div>
-
-            <button class="shadow-2xl">Get in touch</button>
-        </div>
+        </main>
     </div>
-</main>
-</div>
-<footer class="mt-auto grid grid-cols-3 p-4 py-">
-    <div class="social">
+    <footer class="mt-auto grid grid-cols-2 p-4 grid-rows-2">
+        <div class="social">
             <ul>
                 <li><a href="#">❎</a> Twitter (x)</li>
                 <li><a href="#">📸</a> Instagram</li>
@@ -50,10 +49,19 @@
                 <li><a href="#">📽</a> Youtube</li>
             </ul>
         </div>
-        <div class="copyR  pt-[80px]"><a href="#">&copy;Chosen Technologies <span id="date"></span></a></span></div>
+    
         <div>
             ". . . made for <strong>AFRICANS</strong>, <br>by <em>AFRICANS</em> 🌍"
         </div>
+        
+        <div class="copyR  pt-[80px] flex test ">
+            <hr class="shadow-lg bg-white" >
+            <a href="#">
+                &copy;Chosen Technologies 
+                <span id="date"></span>
+            </a>
+        </div>
+
     </footer>
 
     <script>
