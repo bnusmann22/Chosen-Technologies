@@ -62,7 +62,7 @@ export default function Hero() {
       <Box
         sx={{
           position: 'absolute',
-          top: -251,
+          top: -250,
           left: 5,
           right: 0,
           zIndex: 2,
