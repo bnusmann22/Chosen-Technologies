@@ -6,6 +6,9 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
+import ZainabiImage from '../Assets/Zainabi.png';
+import JamilImage from '../Assets/Jamil.png';
+import HafeezImage from '../Assets/Hafeez.png';
 
 const pioneersData = [
   {
@@ -14,7 +17,7 @@ const pioneersData = [
     role: 'Co-Founder & Project Lead',
     fullBio:
       'As Co-Founder and Project Lead, Zainab AbdulAzeez is the visionary force behind Chosen Technologies. With a passion for transformative technology and social impact, she spearheads strategic initiatives and ensures the organization remains true to its foundational principles. Zainab brings extensive experience in project management and stakeholder alignment, guiding the company\'s long-term roadmap and growth strategy.',
-    image: '👩‍💼',
+    image: ZainabiImage,
   },
   {
     position: 2,
@@ -22,7 +25,7 @@ const pioneersData = [
     role: 'Co-Founder & CTO',
     fullBio:
       'Abdullahi Muhammad Jamil, Co-Founder and Chief Technology Officer, is the technical architect driving innovation at Chosen Technologies. With deep expertise in software engineering and cloud infrastructure, he designs scalable, secure systems that power our solutions. Abdullahi\'s technical vision ensures the company remains at the forefront of technological advancement while maintaining the highest standards of code quality and system reliability.',
-    image: '👨‍💻',
+    image: JamilImage,
   },
   {
     position: 3,
@@ -30,7 +33,7 @@ const pioneersData = [
     role: 'CEO & Trustee',
     fullBio:
       'Hafeez Ibrahim Makama serves as Chief Executive Officer and Trustee, leading Chosen Technologies with strategic vision and operational excellence. His role encompasses ensuring sustainable growth, stakeholder satisfaction, and alignment with the company\'s core mission. Hafeez brings decades of business acumen and is committed to building a legacy of innovation and integrity in the tech industry.',
-    image: '👨‍💼',
+    image: HafeezImage,
   },
   {
     position: 4,
@@ -195,7 +198,20 @@ export default function Pioneers() {
                     fontSize: '5rem',
                   }}
                 >
-                  {pioneer.image}
+                  {pioneer.image && pioneer.image.includes && pioneer.image.includes('/') ? (
+                    <img 
+                      src={pioneer.image} 
+                      alt={pioneer.name}
+                      style={{
+                        width: '150px',
+                        height: '150px',
+                        objectFit: 'cover',
+                        borderRadius: '50%',
+                      }}
+                    />
+                  ) : (
+                    pioneer.image
+                  )}
                 </Box>
                 <Box sx={{ display: 'flex', flexDirection: 'column', p: 3, pb: 0 }}>
                   <Typography
@@ -295,7 +311,20 @@ export default function Pioneers() {
                     fontSize: '4rem',
                   }}
                 >
-                  {pioneer.image}
+                  {pioneer.image && pioneer.image.includes && pioneer.image.includes('/') ? (
+                    <img 
+                      src={pioneer.image} 
+                      alt={pioneer.name}
+                      style={{
+                        width: '120px',
+                        height: '120px',
+                        objectFit: 'cover',
+                        borderRadius: '50%',
+                      }}
+                    />
+                  ) : (
+                    pioneer.image
+                  )}
                 </Box>
                 <Box sx={{ display: 'flex', flexDirection: 'column', p: 2.5, pb: 0 }}>
                   <Typography
