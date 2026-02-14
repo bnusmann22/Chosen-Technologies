@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Threads from './Threads';
+import CurvedLoop from './CurvedLoop';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
@@ -61,6 +62,29 @@ export default function Hero() {
       <Box
         sx={{
           position: 'absolute',
+          top: -250,
+          left: 5,
+          right: 0,
+          zIndex: 2,
+          display: { xs: 'none', sm: 'flex' },
+          justifyContent: 'center',
+          width: '90%',
+        }}
+      >
+        <Box sx={{ width: '100%', maxWidth: '575px' }}>
+          <CurvedLoop
+            marqueeText="Chosen ✦ Technologies ✦ Chosen ✦ Technologies ✦"
+            speed={4}
+            curveAmount={400}
+            direction="right"
+            interactive={true}
+            className="curved-loop-hero"
+          />
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          position: 'absolute',
           top: -100,
           left: 0,
           right: 0,
@@ -79,7 +103,7 @@ export default function Hero() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          pt: { xs: 14, sm: 20 },
+          pt: { xs: 28, sm: 32 },
           pb: { xs: 8, sm: 12 },
         }}
       >
@@ -119,7 +143,7 @@ export default function Hero() {
               width: { sm: '100%', md: '80%' },
             }}
           >
-            Explore our cutting-edge dashboard, delivering high-quality solutions
+            Explore our cutting-edge Software Solutions, delivering high-quality solutions
             tailored to your needs. Elevate your experience with top-tier features
             and services.
           </Typography>

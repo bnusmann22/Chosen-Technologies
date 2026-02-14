@@ -80,6 +80,9 @@ export default function AppAppBar() {
               alignItems: 'center',
             }}
           >
+            <Button color="primary" variant="contained" size="small">
+              Contact
+            </Button>
             <ColorModeIconDropdown />
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' }, gap: 1 }}>
@@ -115,6 +118,11 @@ export default function AppAppBar() {
                 <MenuItem>Pricing</MenuItem>
                 <MenuItem>FAQ</MenuItem>
                 <MenuItem>Blog</MenuItem>
+                <MenuItem>
+                  <Button color="primary" variant="contained">
+                    Contact
+                  </Button>
+                </MenuItem>
                 <Divider sx={{ my: 3 }} />
               </Box>
             </Drawer>
