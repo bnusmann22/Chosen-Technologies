@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { styled, alpha } from '@mui/material/styles';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ColorModeIconDropdown from '../theme/ColorModeIconDropdown';
 import ChosenTechLogo from './SitemarkIcon';
+import { usePageTransition } from '../context/PageTransitionContext';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: 'flex',
@@ -33,9 +34,20 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 
 export default function AppAppBar() {
   const [open, setOpen] = React.useState(false);
+  const navigate = useNavigate();
+  const { startTransition } = usePageTransition();
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
+  };
+
+  const handleNavigation = (path) => {
+    startTransition();
+    setOpen(false);
+    // Navigate after showing loading animation
+    setTimeout(() => {
+      navigate(path);
+    }, 100);
   };
 
   return (
@@ -56,22 +68,54 @@ export default function AppAppBar() {
               <ChosenTechLogo />
             </Link>
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button variant="text" color="info" size="small">
+              <Button 
+                variant="text" 
+                color="info" 
+                size="small"
+                onClick={() => handleNavigation('/features')}
+              >
                 Features
               </Button>
-              <Button variant="text" color="info" size="small">
+              <Button 
+                variant="text" 
+                color="info" 
+                size="small"
+                onClick={() => handleNavigation('/testimonials')}
+              >
                 Testimonials
               </Button>
-              <Button variant="text" color="info" size="small">
+              <Button 
+                variant="text" 
+                color="info" 
+                size="small"
+                onClick={() => handleNavigation('/highlights')}
+              >
                 Highlights
               </Button>
-              <Button variant="text" color="info" size="small">
+              <Button 
+                variant="text" 
+                color="info" 
+                size="small"
+                onClick={() => handleNavigation('/pricing')}
+              >
                 Pricing
               </Button>
-              <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
+              <Button 
+                variant="text" 
+                color="info" 
+                size="small" 
+                sx={{ minWidth: 0 }}
+                onClick={() => handleNavigation('/faq')}
+              >
                 FAQ
               </Button>
-              <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
+              <Button 
+                variant="text" 
+                color="info" 
+                size="small" 
+                sx={{ minWidth: 0 }}
+                onClick={() => handleNavigation('/blog')}
+              >
                 Blog
               </Button>
             </Box>
@@ -113,12 +157,12 @@ export default function AppAppBar() {
                   </IconButton>
                 </Box>
 
-                <MenuItem>Features</MenuItem>
-                <MenuItem>Testimonials</MenuItem>
-                <MenuItem>Highlights</MenuItem>
-                <MenuItem>Pricing</MenuItem>
-                <MenuItem>FAQ</MenuItem>
-                <MenuItem>Blog</MenuItem>
+                <MenuItem onClick={() => handleNavigation('/features')}>Features</MenuItem>
+                <MenuItem onClick={() => handleNavigation('/testimonials')}>Testimonials</MenuItem>
+                <MenuItem onClick={() => handleNavigation('/highlights')}>Highlights</MenuItem>
+                <MenuItem onClick={() => handleNavigation('/pricing')}>Pricing</MenuItem>
+                <MenuItem onClick={() => handleNavigation('/faq')}>FAQ</MenuItem>
+                <MenuItem onClick={() => handleNavigation('/blog')}>Blog</MenuItem>
                 <MenuItem>
                   <Button color="primary" variant="contained">
                     Contact

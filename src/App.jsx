@@ -1,65 +1,41 @@
 import * as React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
 import AppTheme from './theme/AppTheme';
 import AppAppBar from './components/AppAppBar';
-import Hero from './components/Hero';
-import LogoCollection from './components/LogoCollection';
-import Highlights from './components/Highlights';
-import Features from './components/Features';
-import Testimonials from './components/Testimonials';
-import Team from './components/Team';
-import CTA from './components/CTA';
-import FAQ from './components/FAQ';
-import Footer from './components/Footer';
-import Pioneers from './components/Pioneers';
-
-function HomePage() {
-  return (
-    <>
-      <Hero />
-      <div>
-        <LogoCollection />
-        <Features />
-        <Divider />
-        <Testimonials />
-        <Divider />
-        <Highlights />
-        <Divider />
-        <Team />
-        <Divider />
-        <CTA />
-        <Divider />
-        <FAQ />
-        <Divider />
-        <Footer />
-      </div>
-    </>
-  );
-}
-
-function PioneersPage() {
-  return (
-    <>
-      <Pioneers />
-      <Divider />
-      <Footer />
-    </>
-  );
-}
+import PageTransitionOverlay from './components/PageTransitionOverlay';
+import { PageTransitionProvider } from './context/PageTransitionContext';
+import HomePage from './pages/Home';
+import PioneersPage from './pages/Pioneers';
+import FeaturesPage from './pages/Features';
+import HighlightsPage from './pages/Highlights';
+import TestimonialsPage from './pages/Testimonials';
+import PricingPage from './pages/Pricing';
+import TeamPage from './pages/Team';
+import FAQPage from './pages/FAQ';
+import BlogPage from './pages/Blog';
 
 export default function App(props) {
   return (
     <AppTheme {...props}>
       <CssBaseline enableColorScheme />
-      <Router>
-        <AppAppBar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/pioneers" element={<PioneersPage />} />
-        </Routes>
-      </Router>
+      <PageTransitionProvider>
+        <Router>
+          <AppAppBar />
+          <PageTransitionOverlay />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/pioneers" element={<PioneersPage />} />
+            <Route path="/features" element={<FeaturesPage />} />
+            <Route path="/highlights" element={<HighlightsPage />} />
+            <Route path="/testimonials" element={<TestimonialsPage />} />
+            <Route path="/pricing" element={<PricingPage />} />
+            <Route path="/team" element={<TeamPage />} />
+            <Route path="/faq" element={<FAQPage />} />
+            <Route path="/blog" element={<BlogPage />} />
+          </Routes>
+        </Router>
+      </PageTransitionProvider>
     </AppTheme>
   );
 }

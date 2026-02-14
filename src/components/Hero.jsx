@@ -10,11 +10,42 @@ import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import visuallyHidden from '@mui/utils/visuallyHidden';
-import { styled } from '@mui/material/styles';
+import { styled, keyframes } from '@mui/material/styles';
 
 const templateImageUrl =
   (import.meta && import.meta.env && import.meta.env.VITE_TEMPLATE_IMAGE_URL) ||
   'https://mui.com';
+
+const fadeInUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const slideInHighlight = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
+const StyledHeroTitle = styled(Typography)(({ theme }) => ({
+  animation: `${fadeInUp} 0.8s ease-out forwards`,
+}));
+
+const StyledHighlight = styled(Typography)(({ theme }) => ({
+  animation: `${slideInHighlight} 0.8s ease-out 0.3s forwards`,
+  opacity: 0,
+}));
 
 const StyledBox = styled('div')(({ theme }) => ({
   alignSelf: 'center',
@@ -112,17 +143,17 @@ export default function Hero() {
           useFlexGap
           sx={{ alignItems: 'center', width: { xs: '100%', sm: '70%' } }}
         >
-          <Typography
+          <StyledHeroTitle
             variant="h1"
             sx={{
               display: 'flex',
               flexDirection: { xs: 'column', sm: 'row' },
               alignItems: 'center',
-              fontSize: 'clamp(3rem, 10vw, 3.5rem)',
+              fontSize: { xs: 'clamp(3rem, 7vw, 3.20rem)', sm: 'clamp(4rem, 10vw, 6.5rem)' },
             }}
           >
             Software&nbsp;that&nbsp;
-            <Typography
+            <StyledHighlight
               component="span"
               variant="h1"
               sx={(theme) => ({
@@ -134,13 +165,15 @@ export default function Hero() {
               })}
             >
               Works 
-            </Typography>
-          </Typography>
+            </StyledHighlight>
+          </StyledHeroTitle>
           <Typography
             sx={{
               textAlign: 'center',
               color: 'text.secondary',
               width: { sm: '100%', md: '80%' },
+              fontSize: { xs: 'clamp(.95rem, 2vw, 1.25rem)', sm: 'clamp(1.15rem, 2vw, 1.30rem)' },
+
             }}
           >
             Explore our cutting-edge Software Solutions, delivering high-quality solutions

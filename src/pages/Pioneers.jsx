@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Divider from '@mui/material/Divider';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Container from '@mui/material/Container';
@@ -9,6 +10,8 @@ import { useTheme } from '@mui/material/styles';
 import ZainabiImage from '../Assets/Zainabi.png';
 import JamilImage from '../Assets/Jamil.png';
 import HafeezImage from '../Assets/Hafeez.png';
+import Footer from '../components/Footer';
+import PageContainer from '../components/PageContainer';
 
 const pioneersData = [
   {
@@ -93,7 +96,7 @@ const pioneersData = [
   },
 ];
 
-export default function Pioneers() {
+function PioneersContent() {
   const theme = useTheme();
 
   return (
@@ -419,5 +422,15 @@ export default function Pioneers() {
         </Typography>
       </Box>
     </Container>
+  );
+}
+
+export default function PioneersPage() {
+  return (
+    <PageContainer>
+      <PioneersContent />
+      <Divider />
+      <Footer />
+    </PageContainer>
   );
 }

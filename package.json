@@ -5,6 +5,7 @@
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
     "@mui/utils": "latest",
+    "lenis": "^1.3.17",
     "ogl": "^1.0.11",
     "react": "latest",
     "react-dom": "latest",
