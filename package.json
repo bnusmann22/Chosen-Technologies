@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/material": "latest",
+    "@mui/utils": "latest",
+    "ogl": "^1.0.11",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "description": "https://github.com/mui/material-ui/blob/v7.3.8/docs/data/material/templates/marketing-page/MarketingPage.tsx",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.11"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}
