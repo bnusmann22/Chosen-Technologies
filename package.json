@@ -7,7 +7,8 @@
     "@mui/utils": "latest",
     "ogl": "^1.0.11",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-router-dom": "^7.13.0"
   },
   "description": "https://github.com/mui/material-ui/blob/v7.3.8/docs/data/material/templates/marketing-page/MarketingPage.tsx",
   "devDependencies": {

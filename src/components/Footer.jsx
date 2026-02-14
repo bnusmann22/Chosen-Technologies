@@ -10,7 +10,11 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/X';
+import XIcon from '@mui/icons-material/X';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import SitemarkIcon from './SitemarkIcon';
 
 function Copyright() {
@@ -22,6 +26,9 @@ function Copyright() {
       </Link>
       &nbsp;
       {new Date().getFullYear()}
+      {' • '}
+      <LocationOnIcon sx={{ fontSize: '1rem', verticalAlign: 'middle', mx: 0.5 }} />
+      Kano, Nigeria
     </Typography>
   );
 }
@@ -108,10 +115,10 @@ export default function Footer() {
             Testimonials
           </Link>
           <Link color="text.secondary" variant="body2" href="#">
-            Highlights
+            Our Team
           </Link>
           <Link color="text.secondary" variant="body2" href="#">
-            Pricing
+            Success Stories
           </Link>
           <Link color="text.secondary" variant="body2" href="#">
             FAQs
@@ -128,13 +135,16 @@ export default function Footer() {
             Company
           </Typography>
           <Link color="text.secondary" variant="body2" href="#">
-            About us
+            About Us
+          </Link>
+          <Link color="text.secondary" variant="body2" href="#">
+            Our Mission
           </Link>
           <Link color="text.secondary" variant="body2" href="#">
             Careers
           </Link>
           <Link color="text.secondary" variant="body2" href="#">
-            Press
+            Blog
           </Link>
         </Box>
         <Box
@@ -148,13 +158,13 @@ export default function Footer() {
             Legal
           </Typography>
           <Link color="text.secondary" variant="body2" href="#">
-            Terms
+            Privacy Policy
           </Link>
           <Link color="text.secondary" variant="body2" href="#">
-            Privacy
+            Terms of Service
           </Link>
           <Link color="text.secondary" variant="body2" href="#">
-            Contact
+            Contact Us
           </Link>
         </Box>
       </Box>
@@ -166,6 +176,9 @@ export default function Footer() {
           width: '100%',
           borderTop: '1px solid',
           borderColor: 'divider',
+          flexDirection: { xs: 'column', sm: 'row' },
+          gap: { xs: 2, sm: 0 },
+          alignItems: { xs: 'flex-start', sm: 'center' },
         }}
       >
         <div>
@@ -189,7 +202,34 @@ export default function Footer() {
           <IconButton
             color="inherit"
             size="small"
-            href="https://github.com/mui"
+            href="https://instagram.com"
+            aria-label="Instagram"
+            sx={{ alignSelf: 'center' }}
+          >
+            <InstagramIcon />
+          </IconButton>
+          <IconButton
+            color="inherit"
+            size="small"
+            href="https://x.com"
+            aria-label="X"
+            sx={{ alignSelf: 'center' }}
+          >
+            <XIcon />
+          </IconButton>
+          <IconButton
+            color="inherit"
+            size="small"
+            href="https://linkedin.com"
+            aria-label="LinkedIn"
+            sx={{ alignSelf: 'center' }}
+          >
+            <LinkedInIcon />
+          </IconButton>
+          <IconButton
+            color="inherit"
+            size="small"
+            href="https://github.com"
             aria-label="GitHub"
             sx={{ alignSelf: 'center' }}
           >
@@ -198,20 +238,20 @@ export default function Footer() {
           <IconButton
             color="inherit"
             size="small"
-            href="https://x.com/MaterialUI"
-            aria-label="X"
+            href="https://youtube.com"
+            aria-label="YouTube"
             sx={{ alignSelf: 'center' }}
           >
-            <TwitterIcon />
+            <YouTubeIcon />
           </IconButton>
           <IconButton
             color="inherit"
             size="small"
-            href="https://www.linkedin.com/company/mui/"
-            aria-label="LinkedIn"
+            href="https://facebook.com"
+            aria-label="Facebook"
             sx={{ alignSelf: 'center' }}
           >
-            <LinkedInIcon />
+            <FacebookIcon />
           </IconButton>
         </Stack>
       </Box>
