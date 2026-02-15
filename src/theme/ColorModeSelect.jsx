@@ -5,21 +5,15 @@ import Select from '@mui/material/Select';
 
 export default function ColorModeSelect(props) {
   const { mode, setMode } = useColorScheme();
+  
+  React.useEffect(() => {
+    setMode('dark');
+  }, [setMode]);
+  
   if (!mode) {
     return null;
   }
-  return (
-    <Select
-      value={mode}
-      onChange={(event) => setMode(event.target.value)}
-      SelectDisplayProps={{
-        'data-screenshot': 'toggle-mode',
-      }}
-      {...props}
-    >
-      <MenuItem value="system">System</MenuItem>
-      <MenuItem value="light">Light</MenuItem>
-      <MenuItem value="dark">Dark</MenuItem>
-    </Select>
-  );
+  
+  // Dark mode only - return null to hide the selector
+  return null;
 }

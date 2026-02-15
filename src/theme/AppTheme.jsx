@@ -12,6 +12,11 @@ export default function AppTheme({
   disableCustomTheme,
   themeComponents,
 }) {
+  React.useEffect(() => {
+    // Force dark mode by setting the attribute on the HTML element
+    document.documentElement.setAttribute('data-mui-color-scheme', 'dark');
+  }, []);
+
   const theme = React.useMemo(() => {
     return disableCustomTheme
       ? {}
@@ -20,7 +25,6 @@ export default function AppTheme({
           cssVariables: {
             colorSchemeSelector: 'data-mui-color-scheme',
             cssVarPrefix: 'template',
-            defaultColorScheme: 'dark',
           },
           colorSchemes, // Recently added in v6 for building light & dark mode app, see https://mui.com/material-ui/customization/palette/#color-schemes
           typography,
