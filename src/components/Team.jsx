@@ -7,7 +7,12 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
+import { useNavigate } from 'react-router-dom';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import ZainabiImage from '../Assets/Zainabi.png';
+import JamilImage from '../Assets/Jamil.png';
+import HafeezImage from '../Assets/Hafeez.png';
+import bashirImage from '../Assets/JOGANA.png';
 
 const pioneers = [
   {
@@ -15,28 +20,28 @@ const pioneers = [
     name: 'Zainab AbdulAzeez',
     role: 'Co-Founder & Project Lead',
     description: 'Co-Founder and Project Lead, Zainab spearheads the vision and strategic direction of Chosen Technologies.',
-    image: '👩‍💼',
+    image: ZainabiImage,
   },
   {
     position: 2,
     name: 'Abdullahi Muhammad Jamil',
     role: 'Co-Founder & CTO',
     description: 'Co-Founder and Chief Technology Officer, Abdullahi drives technical innovation and architectural excellence.',
-    image: '👨‍💻',
+    image: JamilImage,
   },
   {
     position: 3,
     name: 'Hafeez Ibrahim Makama',
     role: 'CEO & Trustee',
     description: 'CEO and Trustee, Hafeez leads the organization with strategic vision and operational excellence.',
-    image: '👨‍💼',
+    image: HafeezImage,
   },
   {
     position: 4,
     name: 'Bashir Abdullahi Ali JOGANA',
     role: 'Trustee',
     description: 'Trustee, Bashir ensures the continuity of our vision and protects our founding principles.',
-    image: '👨‍⚖️',
+    image: bashirImage,
   },
   {
     position: 5,
@@ -84,6 +89,7 @@ const pioneers = [
 
 export default function Team() {
   const theme = useTheme();
+  const navigate = useNavigate();
 
   return (
     <Container
@@ -155,7 +161,21 @@ export default function Team() {
                   fontSize: '4rem',
                 }}
               >
-                {member.image}
+                {typeof member.image === 'string' && member.image.includes('.png') ? (
+                  <Box
+                    component="img"
+                    src={member.image}
+                    alt={member.name}
+                    sx={{
+                      width: '150px',
+                      height: '150px',
+                      objectFit: 'cover',
+                      borderRadius: '50%',
+                    }}
+                  />
+                ) : (
+                  member.image
+                )}
               </Box>
               <Box sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1, p: 2.5, pb: 0 }}>
                 <Typography
@@ -196,7 +216,7 @@ export default function Team() {
         <Button
           variant="contained"
           endIcon={<ArrowRightIcon />}
-          href="/pioneers"
+          onClick={() => navigate('/pioneers')}
           sx={{
             px: 4,
             py: 1.5,

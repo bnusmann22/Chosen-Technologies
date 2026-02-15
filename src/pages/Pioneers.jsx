@@ -10,6 +10,7 @@ import { useTheme } from '@mui/material/styles';
 import ZainabiImage from '../Assets/Zainabi.png';
 import JamilImage from '../Assets/Jamil.png';
 import HafeezImage from '../Assets/Hafeez.png';
+import bashirImage from '../Assets/JOGANA.png';
 import Footer from '../components/Footer';
 import PageContainer from '../components/PageContainer';
 
@@ -44,7 +45,7 @@ const pioneersData = [
     role: 'Trustee',
     fullBio:
       'Bashir Abdullahi Ali JOGANA serves as Trustee, ensuring the continuity of Chosen Technologies\' vision and protecting the organization\'s founding principles. As a custodian of standards, Bashir ensures that every decision aligns with the company\'s constitutional values and long-term strategic objectives. His oversight guarantees the company\'s sustainable growth and ethical operations.',
-    image: '👨‍⚖️',
+    image: bashirImage,
   },
   {
     position: 5,
