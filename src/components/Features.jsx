@@ -94,13 +94,8 @@ const FeatureCard = styled(Box)(({ theme, cardIndex }) => {
   const gridSpans = [7, 5, 4, 4, 4, 5, 7];
   const gridSpan = gridSpans[cardIndex] || 4;
 
-  const cardBg = theme.palette.mode === 'dark' 
-    ? theme.palette.grey[900] 
-    : theme.palette.background.paper;
-  
-  const cardHoverBg = theme.palette.mode === 'dark'
-    ? theme.palette.grey[800]
-    : theme.palette.grey[100];
+  const cardBg = alpha(theme.palette.primary.main, 0.08);
+  const cardHoverBg = alpha(theme.palette.primary.main, 0.15);
 
   return {
     position: 'relative',
