@@ -57,7 +57,7 @@ const SectionHeading = styled(Typography)(({ theme }) => ({
   fontFamily: "'Syne', sans-serif",
   fontSize: 'clamp(42px, 6vw, 80px)',
   fontWeight: 800,
-  color: theme.palette.text.primary,
+  color: '#ffffff',
   lineHeight: 1.0,
   letterSpacing: '-0.02em',
   maxWidth: '720px',
@@ -69,7 +69,7 @@ const SectionHeading = styled(Typography)(({ theme }) => ({
 const SectionSub = styled(Typography)(({ theme }) => ({
   fontSize: '16px',
   fontWeight: 300,
-  color: theme.palette.text.secondary,
+  color: '#ffffff',
   maxWidth: '480px',
   lineHeight: 1.7,
   marginBottom: '88px',
@@ -244,7 +244,7 @@ const StripQuote = styled(Typography)(({ theme }) => ({
   fontFamily: "'Syne', sans-serif",
   fontSize: '15px',
   fontWeight: 600,
-  color: theme.palette.text.primary,
+  color: '#ffffff',
   letterSpacing: '0.02em',
 }));
 

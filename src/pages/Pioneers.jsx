@@ -6,7 +6,12 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
 import { useTheme } from '@mui/material/styles';
+import XIcon from '@mui/icons-material/X';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import ZainabiImage from '../Assets/Zainabi.png';
 import JamilImage from '../Assets/Jamil.png';
 import HafeezImage from '../Assets/Hafeez.png';
@@ -22,6 +27,12 @@ const pioneersData = [
     fullBio:
       'As Co-Founder and Project Lead, Zainab AbdulAzeez is the visionary force behind Chosen Technologies. With a passion for transformative technology and social impact, she spearheads strategic initiatives and ensures the organization remains true to its foundational principles. Zainab brings extensive experience in project management and stakeholder alignment, guiding the company\'s long-term roadmap and growth strategy.',
     image: ZainabiImage,
+    social: {
+      x: 'https://x.com/in_I_dev',
+      instagram: 'https://www.instagram.com/xaynnwebstudio/',
+      linkedin: 'https://www.linkedin.com/in/zainab-abdulazeez-02515a345/',
+      github: 'https://github.com/Xaynerbb',
+    },
   },
   {
     position: 2,
@@ -30,6 +41,12 @@ const pioneersData = [
     fullBio:
       'Abdullahi Muhammad Jamil, Co-Founder and Chief Technology Officer, is the technical architect driving innovation at Chosen Technologies. With deep expertise in software engineering and cloud infrastructure, he designs scalable, secure systems that power our solutions. Abdullahi\'s technical vision ensures the company remains at the forefront of technological advancement while maintaining the highest standards of code quality and system reliability.',
     image: JamilImage,
+    social: {
+      x: 'https://x.com/BnUsmann22',
+      instagram: 'https://www.instagram.com/bn_usmann24/',
+      linkedin: 'https://www.linkedin.com/in/abdullahi-jamil-26b940275/l',
+      github: 'https://github.com/bnusmann22',
+    },
   },
   {
     position: 3,
@@ -38,6 +55,12 @@ const pioneersData = [
     fullBio:
       'Hafeez Ibrahim Makama serves as Chief Executive Officer and Trustee, leading Chosen Technologies with strategic vision and operational excellence. His role encompasses ensuring sustainable growth, stakeholder satisfaction, and alignment with the company\'s core mission. Hafeez brings decades of business acumen and is committed to building a legacy of innovation and integrity in the tech industry.',
     image: HafeezImage,
+    social: {
+      x: 'https://x.com/hafeezibrahim',
+      instagram: 'https://instagram.com/hafeezibrahim',
+      linkedin: 'https://linkedin.com/in/hafeezibrahim',
+      github: 'https://github.com/hafeezibrahim',
+    },
   },
   {
     position: 4,
@@ -46,6 +69,12 @@ const pioneersData = [
     fullBio:
       'Bashir Abdullahi Ali JOGANA serves as Trustee, ensuring the continuity of Chosen Technologies\' vision and protecting the organization\'s founding principles. As a custodian of standards, Bashir ensures that every decision aligns with the company\'s constitutional values and long-term strategic objectives. His oversight guarantees the company\'s sustainable growth and ethical operations.',
     image: bashirImage,
+    social: {
+      x: 'https://x.com/bashirjogana',
+      instagram: 'https://instagram.com/bashirjogana',
+      linkedin: 'https://linkedin.com/in/bashirjogana',
+      github: 'https://github.com/bashirjogana',
+    },
   },
   {
     position: 5,
@@ -54,6 +83,12 @@ const pioneersData = [
     fullBio:
       'Muhammad Ahmad Saeed, as Trustee, safeguards the constitutional values and long-term strategic interests of Chosen Technologies. His role involves protecting the company\'s foundational vision while ensuring governance excellence. Muhammad Ahmad brings strategic wisdom and ensures that organizational decisions reflect the company\'s core mission and values.',
     image: '👨‍💼',
+    social: {
+      x: 'https://x.com/muhammadahmadsaeed',
+      instagram: 'https://instagram.com/muhammadahmadsaeed',
+      linkedin: 'https://linkedin.com/in/muhammadahmadsaeed',
+      github: 'https://github.com/muhammadahmadsaeed',
+    },
   },
   {
     position: 6,
@@ -62,6 +97,12 @@ const pioneersData = [
     fullBio:
       'Bilal Usman Inuwa, as Trustee, is a custodian of organizational standards and continuity. He ensures that Chosen Technologies maintains the highest standards of governance and operational excellence. Bilal\'s oversight protects the company\'s integrity and ensures that all initiatives align with the foundational principles established by the pioneers.',
     image: '👨‍⚖️',
+    social: {
+      x: 'https://x.com/bilalusman',
+      instagram: 'https://instagram.com/bilalusman',
+      linkedin: 'https://linkedin.com/in/bilalusman',
+      github: 'https://github.com/bilalusman',
+    },
   },
   {
     position: 7,
@@ -70,6 +111,12 @@ const pioneersData = [
     fullBio:
       'Ahmad Ahmad Ibrahim, known as Al-Shatrii, serves as Trustee with a commitment to ensuring adherence to founding values and long-term vision. His role involves strategic oversight and protection of the company\'s constitutional framework. Ahmad brings deep knowledge of organizational governance and ensures every strategic decision aligns with the company\'s core mission.',
     image: '👨‍💼',
+    social: {
+      x: 'https://x.com/ahmadalshatrii',
+      instagram: 'https://instagram.com/ahmadalshatrii',
+      linkedin: 'https://linkedin.com/in/ahmadalshatrii',
+      github: 'https://github.com/ahmadalshatrii',
+    },
   },
   {
     position: 8,
@@ -78,6 +125,12 @@ const pioneersData = [
     fullBio:
       'Rahina Humaiza Hassan, as Trustee, brings strategic oversight and protects organizational integrity at Chosen Technologies. Her role encompasses ensuring that the company\'s growth remains sustainable and values-driven. Rahina is committed to fostering a culture of excellence, innovation, and accountability across the organization.',
     image: '👩‍⚖️',
+    social: {
+      x: 'https://x.com/rahinahassan',
+      instagram: 'https://instagram.com/rahinahassan',
+      linkedin: 'https://linkedin.com/in/rahinahassan',
+      github: 'https://github.com/rahinahassan',
+    },
   },
   {
     position: 9,
@@ -86,6 +139,12 @@ const pioneersData = [
     fullBio:
       'Tahir Yahaya, as Trustee, ensures strategic alignment and constitutional compliance within Chosen Technologies. His oversight spans governance, strategic planning, and organizational alignment with founding principles. Tahir is dedicated to maintaining the company\'s reputation for integrity and advancing its mission in the technology sector.',
     image: '👨‍💼',
+    social: {
+      x: 'https://x.com/tahiryahaya',
+      instagram: 'https://instagram.com/tahiryahaya',
+      linkedin: 'https://linkedin.com/in/tahiryahaya',
+      github: 'https://github.com/tahiryahaya',
+    },
   },
   {
     position: 10,
@@ -94,6 +153,12 @@ const pioneersData = [
     fullBio:
       'Abdurrahman Nasir, as Trustee, protects the founding principles and organizational standards of Chosen Technologies. His role ensures that the company\'s growth trajectory remains aligned with its core values and mission. Abdurrahman brings strategic wisdom and is committed to the company\'s sustainable success and positive impact in the technology industry.',
     image: '👨‍⚖️',
+    social: {
+      x: 'https://x.com/abdurrahmannasir',
+      instagram: 'https://instagram.com/abdurrahmannasir',
+      linkedin: 'https://linkedin.com/in/abdurrahmannasir',
+      github: 'https://github.com/abdurrahmannasir',
+    },
   },
 ];
 
@@ -104,7 +169,7 @@ function PioneersContent() {
     <Container
       id="pioneers-page"
       sx={{
-        pt: { xs: 4, sm: 8 },
+        pt: { xs: 6, sm: 12 },
         pb: { xs: 4, sm: 8 },
         position: 'relative',
         display: 'flex',
@@ -123,12 +188,13 @@ function PioneersContent() {
       >
         <Typography
           component="h1"
-          variant="h3"
+          variant="h2"
           gutterBottom
           sx={{
             color: 'text.primary',
             fontWeight: 'bold',
             mb: 2,
+            mt: 4,
           }}
         >
           Our Pioneers
@@ -261,6 +327,81 @@ function PioneersContent() {
                   >
                     {pioneer.fullBio}
                   </Typography>
+                  {pioneer.social && (
+                    <Stack
+                      direction="row"
+                      spacing={1}
+                      sx={{
+                        mt: 2,
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <IconButton
+                        component="a"
+                        href={pioneer.social.x}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="small"
+                        sx={{
+                          color: 'text.secondary',
+                          '&:hover': {
+                            color: 'primary.main',
+                            backgroundColor: 'action.hover',
+                          },
+                        }}
+                      >
+                        <XIcon fontSize="small" />
+                      </IconButton>
+                      <IconButton
+                        component="a"
+                        href={pioneer.social.instagram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="small"
+                        sx={{
+                          color: 'text.secondary',
+                          '&:hover': {
+                            color: '#E4405F',
+                            backgroundColor: 'action.hover',
+                          },
+                        }}
+                      >
+                        <InstagramIcon fontSize="small" />
+                      </IconButton>
+                      <IconButton
+                        component="a"
+                        href={pioneer.social.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="small"
+                        sx={{
+                          color: 'text.secondary',
+                          '&:hover': {
+                            color: '#0A66C2',
+                            backgroundColor: 'action.hover',
+                          },
+                        }}
+                      >
+                        <LinkedInIcon fontSize="small" />
+                      </IconButton>
+                      <IconButton
+                        component="a"
+                        href={pioneer.social.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="small"
+                        sx={{
+                          color: 'text.secondary',
+                          '&:hover': {
+                            color: theme.palette.mode === 'dark' ? '#fff' : '#333',
+                            backgroundColor: 'action.hover',
+                          },
+                        }}
+                      >
+                        <GitHubIcon fontSize="small" />
+                      </IconButton>
+                    </Stack>
+                  )}
                 </Box>
               </Card>
             </Grid>
@@ -376,6 +517,81 @@ function PioneersContent() {
                   >
                     {pioneer.fullBio}
                   </Typography>
+                  {pioneer.social && (
+                    <Stack
+                      direction="row"
+                      spacing={1}
+                      sx={{
+                        mt: 2,
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <IconButton
+                        component="a"
+                        href={pioneer.social.x}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="small"
+                        sx={{
+                          color: 'text.secondary',
+                          '&:hover': {
+                            color: 'primary.main',
+                            backgroundColor: 'action.hover',
+                          },
+                        }}
+                      >
+                        <XIcon fontSize="small" />
+                      </IconButton>
+                      <IconButton
+                        component="a"
+                        href={pioneer.social.instagram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="small"
+                        sx={{
+                          color: 'text.secondary',
+                          '&:hover': {
+                            color: '#E4405F',
+                            backgroundColor: 'action.hover',
+                          },
+                        }}
+                      >
+                        <InstagramIcon fontSize="small" />
+                      </IconButton>
+                      <IconButton
+                        component="a"
+                        href={pioneer.social.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="small"
+                        sx={{
+                          color: 'text.secondary',
+                          '&:hover': {
+                            color: '#0A66C2',
+                            backgroundColor: 'action.hover',
+                          },
+                        }}
+                      >
+                        <LinkedInIcon fontSize="small" />
+                      </IconButton>
+                      <IconButton
+                        component="a"
+                        href={pioneer.social.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="small"
+                        sx={{
+                          color: 'text.secondary',
+                          '&:hover': {
+                            color: theme.palette.mode === 'dark' ? '#fff' : '#333',
+                            backgroundColor: 'action.hover',
+                          },
+                        }}
+                      >
+                        <GitHubIcon fontSize="small" />
+                      </IconButton>
+                    </Stack>
+                  )}
                 </Box>
               </Card>
             </Grid>
@@ -389,10 +605,7 @@ function PioneersContent() {
           mt: 8,
           p: 4,
           textAlign: 'center',
-          backgroundColor:
-            theme.palette.mode === 'dark'
-              ? theme.palette.grey[900]
-              : theme.palette.background.paper,
+          backgroundColor:theme.palette.grey[900],
           border: `2px solid ${theme.palette.primary.main}`,
           borderRadius: 2,
           maxWidth: '800px',
