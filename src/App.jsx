@@ -14,6 +14,13 @@ import PricingPage from './pages/Pricing';
 import TeamPage from './pages/Team';
 import FAQPage from './pages/FAQ';
 import BlogPage from './pages/Blog';
+import SuccessStoriesPage from './pages/SuccessStories';
+import AboutPage from './pages/About';
+import MissionPage from './pages/Mission';
+import CareersPage from './pages/Careers';
+import PrivacyPage from './pages/Privacy';
+import TermsPage from './pages/Terms';
+import ContactPage from './pages/Contact';
 
 export default function App(props) {
   return (
@@ -33,6 +40,13 @@ export default function App(props) {
             <Route path="/team" element={<TeamPage />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/blog" element={<BlogPage />} />
+            <Route path="/success-stories" element={<SuccessStoriesPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/mission" element={<MissionPage />} />
+            <Route path="/careers" element={<CareersPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/terms" element={<TermsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </Router>
       </PageTransitionProvider>
