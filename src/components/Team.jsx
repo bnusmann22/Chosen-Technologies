@@ -95,7 +95,7 @@ export default function Team() {
     <Container
       id="pioneers"
       sx={{
-        pt: { xs: 4, sm: 6 },
+        pt: { xs: 6, sm: 12 },
         pb: { xs: 4, sm: 6 },
         position: 'relative',
         display: 'flex',

@@ -15,9 +15,13 @@ const fadeInUp = keyframes`
 export default function PageContainer({ children }) {
   return (
     <Box
-      sx={{
+      sx={(theme) => ({
         animation: `${fadeInUp} 0.6s ease-out`,
-      }}
+        pt: {
+          xs: `calc(${theme.mixins.toolbar.minHeight}px + 24px)`,
+          sm: 0,
+        },
+      })}
     >
       {children}
     </Box>

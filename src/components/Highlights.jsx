@@ -56,7 +56,7 @@ export default function Highlights() {
     <Box
       id="highlights"
       sx={{
-        pt: { xs: 4, sm: 12 },
+        pt: { xs: 6, sm: 12 },
         pb: { xs: 8, sm: 16 },
         color: 'white',
         bgcolor: 'grey.900',

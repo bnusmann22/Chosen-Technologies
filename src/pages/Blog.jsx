@@ -9,7 +9,10 @@ import PageContainer from '../components/PageContainer';
 export default function BlogPage() {
   return (
     <PageContainer>
-      <Container maxWidth="lg" sx={{ py: { xs: 8, sm: 12 } }}>
+      <Container
+        maxWidth="lg"
+        sx={{ pt: { xs: 6, sm: 12 }, pb: { xs: 8, sm: 12 } }}
+      >
         <Box sx={{ textAlign: 'center', mb: 6 }}>
           <Typography
             component="h1"

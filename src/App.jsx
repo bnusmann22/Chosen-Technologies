@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 import AppTheme from './theme/AppTheme';
 import AppAppBar from './components/AppAppBar';
@@ -28,6 +28,7 @@ export default function App(props) {
       <CssBaseline enableColorScheme />
       <PageTransitionProvider>
         <Router>
+          <ScrollToTop />
           <AppAppBar />
           <PageTransitionOverlay />
           <Routes>
@@ -52,4 +53,14 @@ export default function App(props) {
       </PageTransitionProvider>
     </AppTheme>
   );
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }, [pathname]);
+
+  return null;
 }

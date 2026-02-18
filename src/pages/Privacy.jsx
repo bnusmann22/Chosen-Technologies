@@ -12,7 +12,10 @@ export default function PrivacyPage() {
 
   return (
     <PageContainer>
-      <Container maxWidth="md" sx={{ py: { xs: 8, sm: 12 } }}>
+      <Container
+        maxWidth="md"
+        sx={{ pt: { xs: 6, sm: 12 }, pb: { xs: 8, sm: 12 } }}
+      >
         <Box sx={{ mb: 6 }}>
           <Typography
             component="h1"

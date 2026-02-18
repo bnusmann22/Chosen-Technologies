@@ -201,7 +201,7 @@ const CardTitle = styled(Typography)(({ theme }) => ({
 const CardDesc = styled(Typography)(({ theme }) => ({
   fontSize: '14.5px',
   fontWeight: 300,
-  color: theme.palette.text.secondary,
+  color: '#ffffff',
   lineHeight: 1.75,
 }));
 
@@ -217,7 +217,7 @@ const Tag = styled(Box)(({ theme }) => ({
   letterSpacing: '0.12em',
   textTransform: 'uppercase',
   fontWeight: 500,
-  color: theme.palette.primary.main,
+  color: '#ffffff',
   border: `1px solid ${alpha(theme.palette.primary.main, 0.2)}`,
   padding: '4px 10px',
   borderRadius: '2px',
@@ -392,7 +392,7 @@ export default function Features() {
   const theme = useTheme();
 
   return (
-    <FeaturesSection>
+    <FeaturesSection sx={{ pt: { xs: 6, sm: 12 } }}>
       {/* Header */}
       <SectionLabel variant="body2">What We Offer</SectionLabel>
       <SectionHeading variant="h2">
