@@ -219,7 +219,7 @@ export default function Hero() {
             sx={{ textAlign: 'center' }}
           >
             By clicking &quot;Start now&quot; you agree to our&nbsp;
-            <Link href="#" color="primary">
+            <Link href="/terms" color="primary">
               Terms & Conditions
             </Link>
             .
