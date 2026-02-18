@@ -80,14 +80,6 @@ export default function AppAppBar() {
                 variant="text" 
                 color="info" 
                 size="small"
-                onClick={() => handleNavigation('/testimonials')}
-              >
-                Testimonials
-              </Button>
-              <Button 
-                variant="text" 
-                color="info" 
-                size="small"
                 onClick={() => handleNavigation('/highlights')}
               >
                 Highlights
@@ -158,7 +150,6 @@ export default function AppAppBar() {
                 </Box>
 
                 <MenuItem onClick={() => handleNavigation('/features')}>Features</MenuItem>
-                <MenuItem onClick={() => handleNavigation('/testimonials')}>Testimonials</MenuItem>
                 <MenuItem onClick={() => handleNavigation('/highlights')}>Highlights</MenuItem>
                 <MenuItem onClick={() => handleNavigation('/pricing')}>Pricing</MenuItem>
                 <MenuItem onClick={() => handleNavigation('/faq')}>FAQ</MenuItem>

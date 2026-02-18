@@ -9,7 +9,6 @@ import HomePage from './pages/Home';
 import PioneersPage from './pages/Pioneers';
 import FeaturesPage from './pages/Features';
 import HighlightsPage from './pages/Highlights';
-import TestimonialsPage from './pages/Testimonials';
 import PricingPage from './pages/Pricing';
 import TeamPage from './pages/Team';
 import FAQPage from './pages/FAQ';
@@ -36,7 +35,6 @@ export default function App(props) {
             <Route path="/pioneers" element={<PioneersPage />} />
             <Route path="/features" element={<FeaturesPage />} />
             <Route path="/highlights" element={<HighlightsPage />} />
-            <Route path="/testimonials" element={<TestimonialsPage />} />
             <Route path="/pricing" element={<PricingPage />} />
             <Route path="/team" element={<TeamPage />} />
             <Route path="/faq" element={<FAQPage />} />
