@@ -119,7 +119,7 @@ export default function AppAppBar() {
               alignItems: 'center',
             }}
           >
-            <Button color="primary" variant="contained" size="small">
+            <Button color="primary" variant="contained" size="small" href="/contact">
               Contact
             </Button>
           </Box>
@@ -155,7 +155,7 @@ export default function AppAppBar() {
                 <MenuItem onClick={() => handleNavigation('/faq')}>FAQ</MenuItem>
                 <MenuItem onClick={() => handleNavigation('/blog')}>Blog</MenuItem>
                 <MenuItem>
-                  <Button color="primary" variant="contained">
+                  <Button color="primary" variant="contained" href="/contact">
                     Contact
                   </Button>
                 </MenuItem>
