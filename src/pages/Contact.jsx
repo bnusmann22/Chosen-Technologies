@@ -61,6 +61,7 @@ export default function ContactPage() {
                     <TextField
                       required
                       fullWidth
+                      variant="standard"
                       id="firstName"
                       label="First Name"
                       name="firstName"
@@ -71,6 +72,7 @@ export default function ContactPage() {
                     <TextField
                       required
                       fullWidth
+                      variant="standard"
                       id="lastName"
                       label="Last Name"
                       name="lastName"
@@ -81,6 +83,7 @@ export default function ContactPage() {
                     <TextField
                       required
                       fullWidth
+                      variant="standard"
                       id="email"
                       label="Email Address"
                       name="email"
@@ -90,6 +93,7 @@ export default function ContactPage() {
                   <Grid item xs={12}>
                     <TextField
                       fullWidth
+                      variant="standard"
                       id="phone"
                       label="Phone Number"
                       name="phone"
@@ -99,6 +103,7 @@ export default function ContactPage() {
                   <Grid item xs={12}>
                     <TextField
                       fullWidth
+                      variant="standard"
                       id="subject"
                       label="Subject"
                       name="subject"
@@ -108,11 +113,13 @@ export default function ContactPage() {
                     <TextField
                       required
                       fullWidth
+                      variant="standard"
                       id="message"
                       label="Message"
                       name="message"
                       multiline
-                      rows={6}
+                      minRows={8}
+                      maxRows={12}
                     />
                   </Grid>
                   <Grid item xs={12}>
