@@ -16,6 +16,8 @@ import ZainabiImage from '../Assets/Zainabi.png';
 import JamilImage from '../Assets/Jamil.png';
 import HafeezImage from '../Assets/Hafeez.png';
 import bashirImage from '../Assets/JOGANA.png';
+import BilalImage from '../Assets/BILAL.jpeg';
+import MuhdImage from '../Assets/MUHD.jpeg';
 import Footer from '../components/Footer';
 import PageContainer from '../components/PageContainer';
 
@@ -56,9 +58,9 @@ const pioneersData = [
       'Hafeez Ibrahim Makama serves as Chief Executive Officer and Trustee, leading Chosen Technologies with strategic vision and operational excellence. His role encompasses ensuring sustainable growth, stakeholder satisfaction, and alignment with the company\'s core mission. Hafeez brings decades of business acumen and is committed to building a legacy of innovation and integrity in the tech industry.',
     image: HafeezImage,
     social: {
-      x: 'https://x.com/hafeezibrahim',
-      instagram: 'https://instagram.com/hafeezibrahim',
-      linkedin: 'https://linkedin.com/in/hafeezibrahim',
+      x: 'https://X.com/Makama_001',
+      instagram: 'https://www.instagram.com/makama__001',
+      linkedin: 'https://LinkedIn.com/hafizibrahimsulaiman',
       github: 'https://github.com/hafeezibrahim',
     },
   },
@@ -82,12 +84,12 @@ const pioneersData = [
     role: 'Trustee',
     fullBio:
       'Muhammad Ahmad Saeed, as Trustee, safeguards the constitutional values and long-term strategic interests of Chosen Technologies. His role involves protecting the company\'s foundational vision while ensuring governance excellence. Muhammad Ahmad brings strategic wisdom and ensures that organizational decisions reflect the company\'s core mission and values.',
-    image: '👨‍💼',
+    image: MuhdImage,
     social: {
-      x: 'https://x.com/muhammadahmadsaeed',
-      instagram: 'https://instagram.com/muhammadahmadsaeed',
+      x: 'https://x.com/amameerahmad',
+      instagram: 'https://www.instagram.com/mashtextiles20/',
       linkedin: 'https://linkedin.com/in/muhammadahmadsaeed',
-      github: 'https://github.com/muhammadahmadsaeed',
+      github: 'https://github.com/programanalyzer',
     },
   },
   {
@@ -96,11 +98,11 @@ const pioneersData = [
     role: 'Trustee',
     fullBio:
       'Bilal Usman Inuwa, as Trustee, is a custodian of organizational standards and continuity. He ensures that Chosen Technologies maintains the highest standards of governance and operational excellence. Bilal\'s oversight protects the company\'s integrity and ensures that all initiatives align with the foundational principles established by the pioneers.',
-    image: '👨‍⚖️',
+    image: BilalImage,
     social: {
       x: 'https://x.com/bilalusman',
-      instagram: 'https://instagram.com/bilalusman',
-      linkedin: 'https://linkedin.com/in/bilalusman',
+      instagram: 'https://www.instagram.com/53.qe',
+      linkedin: 'https://www.linkedin.com/in/bilal-usman-4812762a7',
       github: 'https://github.com/bilalusman',
     },
   },
