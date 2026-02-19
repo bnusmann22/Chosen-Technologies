@@ -18,6 +18,7 @@ import HafeezImage from '../Assets/Hafeez.png';
 import bashirImage from '../Assets/JOGANA.png';
 import BilalImage from '../Assets/BILAL.jpeg';
 import MuhdImage from '../Assets/MUHD.jpeg';
+import AlshatriImage from '../Assets/SHATRI.jpeg';
 import Footer from '../components/Footer';
 import PageContainer from '../components/PageContainer';
 
@@ -112,7 +113,7 @@ const pioneersData = [
     role: 'Trustee',
     fullBio:
       'Ahmad Ahmad Ibrahim, known as Al-Shatrii, serves as Trustee with a commitment to ensuring adherence to founding values and long-term vision. His role involves strategic oversight and protection of the company\'s constitutional framework. Ahmad brings deep knowledge of organizational governance and ensures every strategic decision aligns with the company\'s core mission.',
-    image: '👨‍💼',
+    image: AlshatriImage,
     social: {
       x: 'https://x.com/ahmadalshatrii',
       instagram: 'https://instagram.com/ahmadalshatrii',
