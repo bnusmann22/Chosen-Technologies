@@ -192,7 +192,7 @@ const CardTitle = styled(Typography)(({ theme }) => ({
   fontFamily: "'Syne', sans-serif",
   fontSize: '22px',
   fontWeight: 700,
-  color: theme.palette.text.primary,
+  color: '#ffffff',
   lineHeight: 1.2,
   marginBottom: '14px',
   letterSpacing: '-0.01em',
