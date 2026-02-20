@@ -24,7 +24,6 @@ import PageContainer from '../components/PageContainer';
 
 const pioneersData = [
   {
-    position: 1,
     name: 'Zainab AbdulAzeez',
     role: 'Co-Founder & Project Lead',
     fullBio:
@@ -38,7 +37,6 @@ const pioneersData = [
     },
   },
   {
-    position: 2,
     name: 'Abdullahi Muhammad Jamil',
     role: 'Co-Founder & CTO',
     fullBio:
@@ -52,7 +50,6 @@ const pioneersData = [
     },
   },
   {
-    position: 3,
     name: 'Hafeez Ibrahim Makama',
     role: 'CEO & Trustee',
     fullBio:
@@ -66,7 +63,6 @@ const pioneersData = [
     },
   },
   {
-    position: 4,
     name: 'Bashir Abdullahi Ali JOGANA',
     role: 'Trustee',
     fullBio:
@@ -80,7 +76,6 @@ const pioneersData = [
     },
   },
   {
-    position: 5,
     name: 'Muhammad Ahmad Saeed',
     role: 'Trustee',
     fullBio:
@@ -94,7 +89,6 @@ const pioneersData = [
     },
   },
   {
-    position: 6,
     name: 'Bilal Usman Inuwa',
     role: 'Trustee',
     fullBio:
@@ -108,7 +102,6 @@ const pioneersData = [
     },
   },
   {
-    position: 7,
     name: 'Ahmad Ahmad Ibrahim (Al-Shatrii)',
     role: 'Trustee',
     fullBio:
@@ -122,7 +115,6 @@ const pioneersData = [
     },
   },
   {
-    position: 8,
     name: 'Rahina Humaiza Hassan',
     role: 'Trustee',
     fullBio:
@@ -136,7 +128,6 @@ const pioneersData = [
     },
   },
   {
-    position: 9,
     name: 'Tahir Yahaya',
     role: 'Trustee',
     fullBio:
@@ -150,7 +141,6 @@ const pioneersData = [
     },
   },
   {
-    position: 10,
     name: 'Abdurrahman Nasir',
     role: 'Trustee',
     fullBio:
