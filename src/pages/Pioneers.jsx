@@ -278,19 +278,6 @@ function PioneersContent() {
                 </Box>
                 <Box sx={{ display: 'flex', flexDirection: 'column', p: 3, pb: 0 }}>
                   <Typography
-                    variant="body2"
-                    sx={{
-                      color: 'primary.main',
-                      fontWeight: 600,
-                      mb: 1,
-                      fontSize: '0.75rem',
-                      letterSpacing: '0.1em',
-                      textTransform: 'uppercase',
-                    }}
-                  >
-                    Position {pioneer.position}
-                  </Typography>
-                  <Typography
                     gutterBottom
                     sx={{
                       fontWeight: 'bold',
@@ -465,19 +452,6 @@ function PioneersContent() {
                   )}
                 </Box>
                 <Box sx={{ display: 'flex', flexDirection: 'column', p: 2.5, pb: 0 }}>
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: 'primary.main',
-                      fontWeight: 600,
-                      mb: 1,
-                      fontSize: '0.7rem',
-                      letterSpacing: '0.1em',
-                      textTransform: 'uppercase',
-                    }}
-                  >
-                    Position {pioneer.position}
-                  </Typography>
                   <Typography
                     gutterBottom
                     sx={{
