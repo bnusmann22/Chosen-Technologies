@@ -19,13 +19,13 @@ import bashirImage from '../Assets/JOGANA.png';
 import BilalImage from '../Assets/BILAL.jpeg';
 import MuhdImage from '../Assets/MUHD.jpeg';
 import AlshatriImage from '../Assets/SHATRI.jpeg';
+import AbdulrahmanImage from '../Assets/Abdulrahman.jpeg';
 import Footer from '../components/Footer';
 import PageContainer from '../components/PageContainer';
 
 const pioneersData = [
   {
     name: 'Zainab AbdulAzeez',
-    role: 'Co-Founder & Project Lead',
     fullBio:
       'As Co-Founder and Project Lead, Zainab AbdulAzeez is the visionary force behind Chosen Technologies. With a passion for transformative technology and social impact, she spearheads strategic initiatives and ensures the organization remains true to its foundational principles. Zainab brings extensive experience in project management and stakeholder alignment, guiding the company\'s long-term roadmap and growth strategy.',
     image: ZainabiImage,
@@ -38,7 +38,6 @@ const pioneersData = [
   },
   {
     name: 'Abdullahi Muhammad Jamil',
-    role: 'Co-Founder & CTO',
     fullBio:
       'Abdullahi Muhammad Jamil, Co-Founder and Chief Technology Officer, is the technical architect driving innovation at Chosen Technologies. With deep expertise in software engineering and cloud infrastructure, he designs scalable, secure systems that power our solutions. Abdullahi\'s technical vision ensures the company remains at the forefront of technological advancement while maintaining the highest standards of code quality and system reliability.',
     image: JamilImage,
@@ -51,7 +50,6 @@ const pioneersData = [
   },
   {
     name: 'Hafeez Ibrahim Makama',
-    role: 'CEO & Trustee',
     fullBio:
       'Hafeez Ibrahim Makama serves as Chief Executive Officer and Trustee, leading Chosen Technologies with strategic vision and operational excellence. His role encompasses ensuring sustainable growth, stakeholder satisfaction, and alignment with the company\'s core mission. Hafeez brings decades of business acumen and is committed to building a legacy of innovation and integrity in the tech industry.',
     image: HafeezImage,
@@ -64,7 +62,6 @@ const pioneersData = [
   },
   {
     name: 'Bashir Abdullahi Ali JOGANA',
-    role: 'Trustee',
     fullBio:
       'Bashir Abdullahi Ali JOGANA serves as Trustee, ensuring the continuity of Chosen Technologies\' vision and protecting the organization\'s founding principles. As a custodian of standards, Bashir ensures that every decision aligns with the company\'s constitutional values and long-term strategic objectives. His oversight guarantees the company\'s sustainable growth and ethical operations.',
     image: bashirImage,
@@ -77,7 +74,6 @@ const pioneersData = [
   },
   {
     name: 'Muhammad Ahmad Saeed',
-    role: 'Trustee',
     fullBio:
       'Muhammad Ahmad Saeed, as Trustee, safeguards the constitutional values and long-term strategic interests of Chosen Technologies. His role involves protecting the company\'s foundational vision while ensuring governance excellence. Muhammad Ahmad brings strategic wisdom and ensures that organizational decisions reflect the company\'s core mission and values.',
     image: MuhdImage,
@@ -90,7 +86,6 @@ const pioneersData = [
   },
   {
     name: 'Bilal Usman Inuwa',
-    role: 'Trustee',
     fullBio:
       'Bilal Usman Inuwa, as Trustee, is a custodian of organizational standards and continuity. He ensures that Chosen Technologies maintains the highest standards of governance and operational excellence. Bilal\'s oversight protects the company\'s integrity and ensures that all initiatives align with the foundational principles established by the pioneers.',
     image: BilalImage,
@@ -103,7 +98,6 @@ const pioneersData = [
   },
   {
     name: 'Ahmad Ahmad Ibrahim (Al-Shatrii)',
-    role: 'Trustee',
     fullBio:
       'Ahmad Ahmad Ibrahim, known as Al-Shatrii, serves as Trustee with a commitment to ensuring adherence to founding values and long-term vision. His role involves strategic oversight and protection of the company\'s constitutional framework. Ahmad brings deep knowledge of organizational governance and ensures every strategic decision aligns with the company\'s core mission.',
     image: AlshatriImage,
@@ -116,7 +110,6 @@ const pioneersData = [
   },
   {
     name: 'Rahina Humaiza Hassan',
-    role: 'Trustee',
     fullBio:
       'Rahina Humaiza Hassan, as Trustee, brings strategic oversight and protects organizational integrity at Chosen Technologies. Her role encompasses ensuring that the company\'s growth remains sustainable and values-driven. Rahina is committed to fostering a culture of excellence, innovation, and accountability across the organization.',
     image: '👩‍⚖️',
@@ -129,7 +122,6 @@ const pioneersData = [
   },
   {
     name: 'Tahir Yahaya',
-    role: 'Trustee',
     fullBio:
       'Tahir Yahaya, as Trustee, ensures strategic alignment and constitutional compliance within Chosen Technologies. His oversight spans governance, strategic planning, and organizational alignment with founding principles. Tahir is dedicated to maintaining the company\'s reputation for integrity and advancing its mission in the technology sector.',
     image: '👨‍💼',
@@ -142,13 +134,12 @@ const pioneersData = [
   },
   {
     name: 'Abdurrahman Nasir',
-    role: 'Trustee',
     fullBio:
       'Abdurrahman Nasir, as Trustee, protects the founding principles and organizational standards of Chosen Technologies. His role ensures that the company\'s growth trajectory remains aligned with its core values and mission. Abdurrahman brings strategic wisdom and is committed to the company\'s sustainable success and positive impact in the technology industry.',
-    image: '👨‍⚖️',
+    image: AbdulrahmanImage,
     social: {
-      x: 'https://x.com/abdurrahmannasir',
-      instagram: 'https://instagram.com/abdurrahmannasir',
+      x: 'https://x.com/abdul_nq',
+      instagram: 'https://www.instagram.com/abdul_n.a',
       linkedin: 'https://linkedin.com/in/abdurrahmannasir',
       github: 'https://github.com/abdurrahmannasir',
     },
@@ -286,16 +277,6 @@ function PioneersContent() {
                     }}
                   >
                     {pioneer.name}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: 'primary.main',
-                      fontWeight: '600',
-                      mb: 2,
-                    }}
-                  >
-                    {pioneer.role}
                   </Typography>
                   <Typography
                     variant="body2"
@@ -461,17 +442,6 @@ function PioneersContent() {
                     }}
                   >
                     {pioneer.name}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: 'primary.main',
-                      fontWeight: '600',
-                      mb: 1.5,
-                      fontSize: '0.9rem',
-                    }}
-                  >
-                    {pioneer.role}
                   </Typography>
                   <Typography
                     variant="body2"

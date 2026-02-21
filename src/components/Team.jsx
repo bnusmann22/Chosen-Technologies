@@ -17,61 +17,51 @@ import bashirImage from '../Assets/JOGANA.png';
 const pioneers = [
   {
     name: 'Zainab AbdulAzeez',
-    role: 'Co-Founder & Project Lead',
     description: 'Co-Founder and Project Lead, Zainab spearheads the vision and strategic direction of Chosen Technologies.',
     image: ZainabiImage,
   },
   {
     name: 'Abdullahi Muhammad Jamil',
-    role: 'Co-Founder & CTO',
     description: 'Co-Founder and Chief Technology Officer, Abdullahi drives technical innovation and architectural excellence.',
     image: JamilImage,
   },
   {
     name: 'Hafeez Ibrahim Makama',
-    role: 'CEO & Trustee',
     description: 'CEO and Trustee, Hafeez leads the organization with strategic vision and operational excellence.',
     image: HafeezImage,
   },
   {
     name: 'Bashir Abdullahi Ali JOGANA',
-    role: 'Trustee',
     description: 'Trustee, Bashir ensures the continuity of our vision and protects our founding principles.',
     image: bashirImage,
   },
   {
     name: 'Muhammad Ahmad Saeed',
-    role: 'Trustee',
     description: 'Trustee, Muhammad Ahmad safeguards the constitutional values and long-term strategy.',
     image: '👨‍💼',
   },
   {
     name: 'Bilal Usman Inuwa',
-    role: 'Trustee',
     description: 'Trustee, Bilal custodian of standards and organizational continuity.',
     image: '👨‍⚖️',
   },
   {
     name: 'Ahmad Ahmad Ibrahim (Al-Shatrii)',
-    role: 'Trustee',
     description: 'Trustee, Ahmad ensures adherence to founding values and long-term vision.',
     image: '👨‍💼',
   },
   {
     name: 'Rahina Humaiza Hassan',
-    role: 'Trustee',
     description: 'Trustee, Rahina brings strategic oversight and protects organizational integrity.',
     image: '👩‍⚖️',
   },
   {
     name: 'Tahir Yahaya',
-    role: 'Trustee',
     description: 'Trustee, Tahir ensures strategic alignment and constitutional compliance.',
     image: '👨‍💼',
   },
   {
     name: 'Abdurrahman Nasir',
-    role: 'Trustee',
     description: 'Trustee, Abdurrahman protects the founding principles and organizational standards.',
     image: '👨‍⚖️',
   },
@@ -176,16 +166,6 @@ export default function Team() {
                   }}
                 >
                   {member.name}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  sx={{
-                    color: 'primary.main',
-                    fontWeight: '500',
-                    mb: 1,
-                  }}
-                >
-                  {member.role}
                 </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary', flexGrow: 1 }}>
                   {member.description}
