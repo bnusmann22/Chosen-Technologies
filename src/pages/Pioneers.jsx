@@ -18,7 +18,7 @@ import HafeezImage from '../Assets/Hafeez.png';
 import bashirImage from '../Assets/JOGANA.png';
 import BilalImage from '../Assets/BILAL.jpeg';
 import MuhdImage from '../Assets/MUHD.jpeg';
-import AlshatriImage from '../Assets/SHATRI.jpeg';
+import AlshatriImage from '../Assets/SHHATRI.jpeg';
 import AbdulrahmanImage from '../Assets/Abdulrahman.jpeg';
 import humaizah from '../Assets/humaiiizaahh.jpeg';
 import Footer from '../components/Footer';
