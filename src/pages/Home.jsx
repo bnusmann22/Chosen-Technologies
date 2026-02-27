@@ -5,7 +5,7 @@ import LogoCollection from '../components/LogoCollection';
 import Highlights from '../components/Highlights';
 import Features from '../components/Features';
 import Testimonials from '../components/Testimonials';
-import Team from '../components/Team';
+import { BentoGrid } from '../components/BentoGrid';
 import CTA from '../components/CTA';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
@@ -28,7 +28,8 @@ export default function HomePage() {
           <Highlights />
         </section>
         <Divider />
-        <Team />
+        <Divider />
+        <BentoGrid />
         <Divider />
         <CTA />
         <Divider />

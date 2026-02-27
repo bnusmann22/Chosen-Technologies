@@ -20,6 +20,7 @@ import BilalImage from '../Assets/BILAL.jpeg';
 import MuhdImage from '../Assets/MUHD.jpeg';
 import AlshatriImage from '../Assets/SHATRI.jpeg';
 import AbdulrahmanImage from '../Assets/Abdulrahman.jpeg';
+import humaizah from '../Assets/humaiiizaahh.jpeg';
 import Footer from '../components/Footer';
 import PageContainer from '../components/PageContainer';
 
@@ -112,7 +113,7 @@ const pioneersData = [
     name: 'Rahina Humaiza Hassan',
     fullBio:
       'Rahina Humaiza Hassan, as Trustee, brings strategic oversight and protects organizational integrity at Chosen Technologies. Her role encompasses ensuring that the company\'s growth remains sustainable and values-driven. Rahina is committed to fostering a culture of excellence, innovation, and accountability across the organization.',
-    image: '👩‍⚖️',
+    image: humaizah,
     social: {
       x: 'https://x.com/rahinahassan',
       instagram: 'https://instagram.com/rahinahassan',

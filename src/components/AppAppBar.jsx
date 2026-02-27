@@ -88,6 +88,14 @@ export default function AppAppBar() {
                 variant="text" 
                 color="info" 
                 size="small"
+                onClick={() => handleNavigation('/pioneers')}
+              >
+                Pioneers
+              </Button>
+              <Button 
+                variant="text" 
+                color="info" 
+                size="small"
                 onClick={() => handleNavigation('/pricing')}
               >
                 Pricing
