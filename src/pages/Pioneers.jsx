@@ -14,7 +14,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ZainabiImage from '../Assets/Zainabi.png';
 import JamilImage from '../Assets/Jamil.png';
-import HafeezImage from '../Assets/Hafeez.png';
+import HafeezImage from '../Assets/AAAHafeez.png';
 import bashirImage from '../Assets/JOGANA.png';
 import BilalImage from '../Assets/BILAL.jpeg';
 import MuhdImage from '../Assets/MUHD.jpeg';
