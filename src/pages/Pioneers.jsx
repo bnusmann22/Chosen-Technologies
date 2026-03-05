@@ -44,7 +44,7 @@ const pioneersData = [
     image: JamilImage,
     social: {
       x: 'https://x.com/BnUsmann22',
-      instagram: 'https://www.instagram.com/bn_usmann24/',
+      instagram: 'https://www.instagram.com/bn.usmann/',
       linkedin: 'https://www.linkedin.com/in/abdullahi-jamil-26b940275/l',
       github: 'https://github.com/bnusmann22',
     },
