@@ -13,7 +13,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ZainabiImage from '../Assets/Zainabi.png';
-import JamilImage from '../Assets/Jamil.png';
 import HafeezImage from '../Assets/AAAHafeez.png';
 import bashirImage from '../Assets/JOGANA.png';
 import BilalImage from '../Assets/BILAL.jpeg';
@@ -39,6 +38,7 @@ const pioneersData = [
   },
   {
     name: 'Just Jamil',
+    image: "👣",
     fullBio:
       ' Jamil is the technical architect driving innovation at Chosen Technologies. With deep expertise in software engineering and cloud infrastructure, he designs scalable, secure systems that power our solutions. Just Jamil\'s technical vision ensures the company remains at the forefront of technological advancement while maintaining the highest standards of code quality and system reliability.',
     image: JamilImage,
