@@ -38,10 +38,9 @@ const pioneersData = [
   },
   {
     name: 'Just Jamil',
-    image: "👣",
     fullBio:
       ' Jamil is the technical architect driving innovation at Chosen Technologies. With deep expertise in software engineering and cloud infrastructure, he designs scalable, secure systems that power our solutions. Just Jamil\'s technical vision ensures the company remains at the forefront of technological advancement while maintaining the highest standards of code quality and system reliability.',
-    image: JamilImage,
+    image:  "👣",
     social: {
       x: 'https://x.com/BnUsmann..',
       instagram: 'https://www.instagram.com/busmann/',
