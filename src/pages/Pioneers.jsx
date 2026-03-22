@@ -28,7 +28,7 @@ const pioneersData = [
   {
     name: 'Zainab AbdulAzeez',
     fullBio:
-      'As Co-Founder and Project Lead, Zainab AbdulAzeez is the visionary force behind Chosen Technologies. With a passion for transformative technology and social impact, she spearheads strategic initiatives and ensures the organization remains true to its foundational principles. Zainab brings extensive experience in project management and stakeholder alignment, guiding the company\'s long-term roadmap and growth strategy.',
+      'Zainab AbdulAzeez is the visionary force behind Chosen Technologies. With a passion for transformative technology and social impact, she spearheads strategic initiatives and ensures the organization remains true to its foundational principles. Zainab brings extensive experience in project management and stakeholder alignment, guiding the company\'s long-term roadmap and growth strategy.',
     image: ZainabiImage,
     social: {
       x: 'https://x.com/in_I_dev',
@@ -38,15 +38,15 @@ const pioneersData = [
     },
   },
   {
-    name: 'Abdullahi Muhammad Jamil',
+    name: 'Just Jamil',
     fullBio:
-      'Abdullahi Muhammad Jamil, Co-Founder and Chief Technology Officer, is the technical architect driving innovation at Chosen Technologies. With deep expertise in software engineering and cloud infrastructure, he designs scalable, secure systems that power our solutions. Abdullahi\'s technical vision ensures the company remains at the forefront of technological advancement while maintaining the highest standards of code quality and system reliability.',
+      ' Jamil is the technical architect driving innovation at Chosen Technologies. With deep expertise in software engineering and cloud infrastructure, he designs scalable, secure systems that power our solutions. Just Jamil\'s technical vision ensures the company remains at the forefront of technological advancement while maintaining the highest standards of code quality and system reliability.',
     image: JamilImage,
     social: {
-      x: 'https://x.com/BnUsmann22',
-      instagram: 'https://www.instagram.com/bn.usmann/',
-      linkedin: 'https://www.linkedin.com/in/abdullahi-jamil-26b940275/l',
-      github: 'https://github.com/bnusmann22',
+      x: 'https://x.com/BnUsmann..',
+      instagram: 'https://www.instagram.com/busmann/',
+      linkedin: 'https://www.linkedin.com/in/abdulla',
+      github: 'https://github.com/bnusma',
     },
   },
   {
