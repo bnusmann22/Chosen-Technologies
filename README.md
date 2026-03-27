@@ -1,2 +1,2 @@
-# Chosen
-Software that dominates!!
+# Chosen Technologies INC
+Software that WORKS !!
